@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3fbc9d8-7bec-4dbf-83f3-b670b0b53e02" name="Changes" comment="Final" />
+    <list id="07ee123d-8861-4c49-a388-657bcfb0c73c" name="Changes by johna" comment="Changes by johna" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pa04" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pa04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pa04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pa04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pa04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4e5ad551-3848-48b6-868e-2a997a297e1a" />
+        <option name="url" value="https://github.com/CS-3500-OOD/pa04-lakers-in-9.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QnhKhL95gkhPWGic6k2aYw4rb1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/johna/OneDrive/Desktop/CS3500/pa04-lakers-in-9&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/cs3500/pa03" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs3500.pa04" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.pa04-lakers-in-9 [build]">
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cs3500.pa04.Driver" />
+      <module name="pa04.main" />
+      <option name="PROGRAM_PARAMETERS" value="0.0.0.0 35001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cs3500.pa04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyControllerTest.testTakeShots" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cs3500.pa04.ProxyControllerTest.testTakeShots&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa04-lakers-in-9 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="pa04-lakers-in-9 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="Server.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Server.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Driver" />
+      <item itemvalue="Gradle.pa04-lakers-in-9 [build]" />
+      <item itemvalue="Gradle.ProxyControllerTest.testTakeShots" />
+      <item itemvalue="Gradle.pa04-lakers-in-9 [test]" />
+      <item itemvalue="JAR Application.Server.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.pa04-lakers-in-9 [build]" />
+        <item itemvalue="JAR Application.Server.jar" />
+        <item itemvalue="Application.Driver" />
+        <item itemvalue="Gradle.pa04-lakers-in-9 [test]" />
+        <item itemvalue="Gradle.ProxyControllerTest.testTakeShots" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3fbc9d8-7bec-4dbf-83f3-b670b0b53e02" name="Changes" comment="" />
+      <created>1685995190685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685995190685</updated>
+      <workItem from="1685995192293" duration="69992000" />
+      <workItem from="1686689495783" duration="1409000" />
+      <workItem from="1686691762028" duration="917000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adding and deleting jar">
+      <created>1685995206963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685995206963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding and deleting jar">
+      <created>1686061534103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686061534104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding and deleting jar">
+      <created>1686068488350</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686068488350</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Records">
+      <created>1686070911940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686070911940</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Records">
+      <created>1686071418683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686071418683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Records">
+      <created>1686071432309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686071432309</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Records">
+      <created>1686100973891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686100973891</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Records">
+      <created>1686102301025</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686102301026</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Records">
+      <created>1686104121846</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686104121846</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Records">
+      <created>1686149111449</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686149111450</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix Driver">
+      <created>1686149764672</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686149764672</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix Driver">
+      <created>1686150169750</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686150169750</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix Driver">
+      <created>1686184246758</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686184246758</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix Driver">
+      <created>1686185995665</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686185995665</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Changes by johna">
+      <created>1686186011457</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686186011457</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changes by johna">
+      <created>1686186019258</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686186019258</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix Driver">
+      <created>1686186035680</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686186035680</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixing ProxyController">
+      <created>1686235837957</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686235837957</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes by johna">
+      <created>1686235852557</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686235852557</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixing Driver">
+      <created>1686235934724</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686235934724</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixing Driver">
+      <created>1686256205634</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686256205634</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Changes by johna">
+      <created>1686256212783</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686256212783</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed Setup and ShipJson">
+      <created>1686272582545</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686272582545</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed Setup and ShipJson">
+      <created>1686275016595</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686275016595</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixed Setup and ShipJson">
+      <created>1686316722895</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686316722895</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Finish ProxyController">
+      <created>1686321019724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321019724</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Finish ProxyController">
+      <created>1686322514003</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686322514003</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Attempting to create mocks">
+      <created>1686325043525</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686325043525</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Attempting to create mocks">
+      <created>1686326037983</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1686326037983</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Attempting to create mocks">
+      <created>1686334578366</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1686334578367</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Attempting to create mocks">
+      <created>1686356111948</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1686356111948</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Testing">
+      <created>1686503390772</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1686503390772</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Testing">
+      <created>1686503411550</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1686503411550</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Testing">
+      <created>1686506607268</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1686506607268</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Testing">
+      <created>1686507196812</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1686507196812</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Testing">
+      <created>1686578450645</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578450645</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Checking if it pushes">
+      <created>1686690872700</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1686690872700</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Checking if it pushes">
+      <created>1686691381502</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1686691381502</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Checking if it pushes">
+      <created>1686692865668</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1686692865668</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Adding and deleting jar" />
+    <MESSAGE value="Records" />
+    <MESSAGE value="Fix Driver" />
+    <MESSAGE value="Fixing ProxyController" />
+    <MESSAGE value="Fixing Driver" />
+    <MESSAGE value="Changes by johna" />
+    <MESSAGE value="Fixed Setup and ShipJson" />
+    <MESSAGE value="Finish ProxyController" />
+    <MESSAGE value="Attempting to create mocks" />
+    <MESSAGE value="Testing" />
+    <MESSAGE value="Checking if it pushes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checking if it pushes" />
+  </component>
+</project>

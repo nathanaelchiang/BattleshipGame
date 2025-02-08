@@ -1,0 +1,41 @@
+Index: src/main/java/cs3500/pa04/ProxyController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package cs3500.pa04;\n\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport cs3500.pa03.Coord;\nimport cs3500.pa03.GameController;\nimport cs3500.pa03.Opponent;\nimport cs3500.pa03.Player;\nimport cs3500.pa03.Ship;\nimport cs3500.pa03.ShipType;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.io.PrintStream;\nimport java.net.Socket;\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Map;\n\npublic class ProxyController {\n  private final Socket server;\n  private final InputStream in;\n  private final PrintStream out;\n  private final Player player;\n  private final ObjectMapper mapper = new ObjectMapper();\n  private String playerName;\n\n  private static final JsonNode VOID_RESPONSE =\n      new ObjectMapper().getNodeFactory().textNode(\"void\");\n\n  public ProxyController(Socket server, Opponent player) throws IOException {\n    this.server = server;\n    this.in = server.getInputStream();\n    this.out = new PrintStream(server.getOutputStream());\n    this.player = player;\n  }\n\n  /**\n   * Listens for messages from the server as JSON in the format of a MessageJSON. When a complete\n   * message is sent by the server, the message is parsed and then delegated to the corresponding\n   * helper method for each message. This method stops when the connection to the server is closed\n   * or an IOException is thrown from parsing malformed JSON.\n   */\n  public void run() throws IOException {\n    try {\n      JsonParser parser = this.mapper.getFactory().createParser(this.in);\n\n      while (!this.server.isClosed()) {\n        MessageJson message = parser.readValueAs(MessageJson.class);\n        String name = message.messageName();\n        JsonNode arguments = message.arguments();\n          if (name.equals(\"join\")) {\n            handleJoin(message);\n          } else if (name.equals(\"setup\")) {\n//            SetupJson message = mapper.treeToValue(node, SetupJson.class);\n            handleSetup(arguments);\n          } else if (name.equals(\"take-shots\")) {\n//            TakeShotsJson shots = mapper.treeToValue(node, TakeShotsJson.class);\n            handleShots(shots);\n          } else if (name.equals(\"report-damage\")) {\n//            ReportDamageJson message = mapper.treeToValue(node, ReportDamageJson.class);\n            handleReportDamage(message);\n          } else if (name.equals(\"successful-hits\")) {\n//            SuccessfulHitsJson message = mapper.treeToValue(node, ReportDamageJson.class);\n            handleSuccessfulHits(message);\n          } else if (name.equals(\"end-game\")) {\n            EndGameJson win = mapper.treeToValue(node, EndGameJson.class);\n            handleWin(win);\n          }\n        }\n\n    } catch (IOException e) {\n      throw new IllegalArgumentException(\"Disconnected from server or parsing exception\", e);\n    }\n  }\n\n  public void handleJoin(MessageJson message) {\n    // both or just one name since project is shared\n    JoinJson json = new JoinJson(\"nathanaelchiang\", \"SINGLE\");\n    JsonNode jsonResponse = JsonUtils.serializeRecord(json);\n    this.out.println(jsonResponse);\n\n  }\n\n  public void handleSetup(JsonNode args) {\n    int height = args.get(\"height\").asInt();\n    int width = args.get(\"width\").asInt();\n    Map<ShipType, Integer> specifications = new HashMap<>();\n    JsonNode ships = args.get(\"fleet-spec\");\n\n    int carrierCount = ships.get(\"CARRIER\").asInt();\n    int battleshipCount = ships.get(\"BATTLESHIP\").asInt();\n    int destroyerCount = ships.get(\"DESTROYER\").asInt();\n    int submarineCount = ships.get(\"SUBMARINE\").asInt();\n\n    specifications.put(ShipType.CARRIER, carrierCount);\n    specifications.put(ShipType.BATTLESHIP, battleshipCount);\n    specifications.put(ShipType.DESTROYER, destroyerCount);\n    specifications.put(ShipType.SUBMARINE, submarineCount);\n\n    List<Ship> shipList = player.setup(height, width, specifications);\n    List<FleetJson> fleetList = new ArrayList<>();\n    for (Ship ship : shipList) {\n      fleetList.add(new FleetJson(ship.getCoord(), ship.getCoord().size(), getDirection(ship.getCoord())));\n    }\n\n\n  }\n\n  private String getDirection(List<Coord> list) {\n    Coord startingCoord = list.get(0);\n    Coord secondCoord = list.get(1);\n    if (startingCoord.getX() == secondCoord.getX()) {\n      return \"VERTICAL\";\n    } else {\n      return \"HORIZONTAL\";\n    }\n  }\n\n  public void handleShots(JsonNode arguments) {\n    player.takeShots();\n    // serialize the list of shots (Coords) that are meant to be returned\n\n  }\n\n  public void handleWin() {\n    int winner = player.getWinner();\n    // Send the winner information back to the server if necessary\n    // Your code returns an int for getWinner() but also does the\n    // sout for the correct if statement so idk how we should handle this\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/cs3500/pa04/ProxyController.java b/src/main/java/cs3500/pa04/ProxyController.java
+--- a/src/main/java/cs3500/pa04/ProxyController.java	(revision 3aab59dd906c3916838225af3cbbf8a1cbc16b08)
++++ b/src/main/java/cs3500/pa04/ProxyController.java	(date 1686233695018)
+@@ -57,7 +57,7 @@
+             handleSetup(arguments);
+           } else if (name.equals("take-shots")) {
+ //            TakeShotsJson shots = mapper.treeToValue(node, TakeShotsJson.class);
+-            handleShots(shots);
++            handleTakeShots(shots);
+           } else if (name.equals("report-damage")) {
+ //            ReportDamageJson message = mapper.treeToValue(node, ReportDamageJson.class);
+             handleReportDamage(message);
+@@ -104,8 +104,10 @@
+     for (Ship ship : shipList) {
+       fleetList.add(new FleetJson(ship.getCoord(), ship.getCoord().size(), getDirection(ship.getCoord())));
+     }
+-
+-
++    for (Record record : fleetList) {
++      JsonNode jsonResponse = JsonUtils.serializeRecord(record);
++      this.out.println(jsonResponse);
++    }
+   }
+ 
+   private String getDirection(List<Coord> list) {
+@@ -118,7 +120,7 @@
+     }
+   }
+ 
+-  public void handleShots(JsonNode arguments) {
++  public void handleTakeShots(JsonNode arguments) {
+     player.takeShots();
+     // serialize the list of shots (Coords) that are meant to be returned
+ 
